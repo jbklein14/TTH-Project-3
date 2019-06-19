@@ -27,9 +27,9 @@
         <div class="border"></div>
 
         <div class="section-2">
-            <h2>Contact Info</h2>
             <form>
-                <div class="top-form">
+                <fieldset class="top-form">
+                    <legend>Contact Info</legend>
 
                     <div class="input-section">
                     <label for="fullName">Full Name</label>
@@ -126,11 +126,14 @@
                     </div>
                     <br>
                 </div>
+            </fieldset>
+        </form>
 
                 <hr />
-
+            <form>
+                <fieldset>
+                <legend>Newsletter</legend>
                 <div class="bottom-form">
-                    <h2>Newsletter</h2>
                     <p>Select the newsletter you would like to recieve</p>
                     <input type="checkbox" name="news" id="htmlnews">
                     <label for="htmlnews">HTML News</label>
@@ -156,13 +159,14 @@
 
                     <div class="txt">
                         <label>Other topics you'd like to hear about</label>
-                        <textarea name="name" rows="8" cols="80"></textarea>
+                        <textarea for="name" name="name" id="name" rows="8" cols="80"></textarea>
                     </div>  
 
                     <button type="submit">Sign Up</button>
                     <p class="copy">Copyright The Code Review</p>
-                </div>  
-            </form>
+                </div>
+            </fieldset>  
+        </form>
 
         </div>
     </div>
